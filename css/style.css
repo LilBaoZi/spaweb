@@ -1,0 +1,21 @@
+/* Custom styles for the Inter font and general body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+/* Custom class for active navigation link */
+.nav-link.active {
+    /* Adjusted active state for softer colors */
+    @apply text-blue-800 bg-blue-100;
+}
+
+/* Hide mobile menu by default */
+.mobile-menu {
+    display: none;
+}
+
+/* Show mobile menu when 'active' class is present */
+.mobile-menu.active {
+    display: flex;
+}
