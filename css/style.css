@@ -19,3 +19,9 @@ body {
 .mobile-menu.active {
     display: flex;
 }
+
+/* NEW: Styles for the animated cloud */
+#animated-cloud {
+    /* Base styles - opacity set to 0 in HTML for initial hidden state */
+    transition: opacity 3s ease-in-out, transform 10s linear; /* Adjust timing as desired */
+}
