@@ -1,4 +1,4 @@
-/* Global Font Styling */
+
 body {
     font-family: 'Times New Roman', serif;
     scroll-behavior: smooth; 
@@ -13,12 +13,12 @@ body {
     @apply text-blue-800 bg-blue-100;
 }
 
-/* Hide mobile menu by default */
+
 .mobile-menu {
     display: none;
 }
 
-/* Show mobile menu when 'active' class is present */
+
 .mobile-menu.active {
     display: flex;
 }
