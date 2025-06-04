@@ -10,18 +10,19 @@
 </head>
 <body class="bg-blue-50 text-gray-800">
 
-    <a href="tel:+12408838837" class=" hover:bg-blue-500 font-bold py-4 px-6 rounded-full text-lg shadow-lg transform hover:scale-105 transition ease-in-out"
+    <a href="tel:+12408838837"
+    class="hidden md:block hover:bg-blue-500 font-bold py-4 px-6 rounded-full text-lg shadow-lg transform hover:scale-105 transition ease-in-out"
     style="font-family: 'Times New Roman', sans-serif;
             position: fixed;
             bottom: 70px;
             right: 15px;
-            z-index: 9999; 
-            display: flex;
+            z-index: 9999;
+            display: flex; /* Tailwind's block/hidden overrides display, so this will only apply on md and up */
             align-items: center;
             justify-content: center;
             text-decoration: none;
             white-space: nowrap;
-            min-width: 150px; /* Give it a minimum width to prevent shrinking */
+            min-width: 150px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             color: #002852;
@@ -65,10 +66,10 @@
         style="background-image: url('images/cloud.png'); ">
         <div class="absolute inset-0 bg-gray-800 opacity-10"></div>
         <div class="relative z-10 text-center px-24 py-24 bg-white bg-opacity-80 rounded-xl shadow-2xl max-w-5xl mx-auto backdrop-blur-sm">
-            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 leading-tight text-blue-900" style="font-family: 'Times New Roman', sans-serif;">
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-6 leading-tight text-blue-900" style="font-family: 'Times New Roman', sans-serif;">
                 Sky Foot Spa
             </h1>
-            <p class="text-2xl md:text-3xl mb-8 font-light max-w-2xl mx-auto text-blue-800 italic" style="font-family: 'Times New Roman', sans-serif;">
+            <p class="text-2xl md:text-2xl mb-8 font-light max-w-2xl mx-auto text-blue-800 italic" style="font-family: 'Times New Roman', sans-serif;">
                 Balance begins at your feet.
             </p>
             <a href="#top-services" class="inline-block  hover:bg-blue-500 font-bold py-4 px-10 rounded-full text-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"style="font-family: 'Times New Roman', sans-serif;background-color: #9fc1edff;color: #002852;">
