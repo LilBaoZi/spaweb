@@ -9,11 +9,29 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-blue-50 text-gray-800">
-
-    <header class="bg-green-50 text-blue-800 shadow-md fixed w-full z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center" style="font-family: 'Times New Roman', sans-serif;">
+    <a href="tel:+12408838837" class=" hover:bg-blue-500 font-bold py-4 px-6 rounded-full text-lg shadow-lg transform hover:scale-105 transition ease-in-out"
+    style="font-family: 'Times New Roman', sans-serif;
+            position: fixed;
+            bottom: 70px;
+            right: 15px;
+            z-index: 9999; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            white-space: nowrap;
+            min-width: 150px; /* Give it a minimum width to prevent shrinking */
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            color: #002852;
+            background-color: #9fc1edff;
+    ">
+        (240) 883-8837
+    </a>
+    <header class="bg-green-50 text-blue-800 shadow-md fixed w-full z-50" style="background-color: #9fc1edff;">
+        <div class="container mx-auto px-10 flex justify-between items-center" style="font-family: 'Times New Roman', sans-serif;">
             <a href="#home" class="text-3xl font-bold tracking-wider rounded-md p-2 hover:bg-blue-100 transition duration-300" >
-                Sky Foot Spa
+                <img src="images/biglogo.jpg" alt="Sky Foot Spa Logo" class="h-12 md:h-20 object-contain">
             </a>
 
             <nav class="hidden md:flex space-x-6">
@@ -40,107 +58,160 @@
         </nav>
     </header>
 
-    <main class="pt-20"> <section id="all-services-page" class="py-16 md:py-24 bg-blue-50" style="font-family: 'Times New Roman', sans-serif;">
+    <main class="pt-20" style="font-family: 'Times New Roman', sans-serif;">
+        <section id="all-services-page" class="py-16 md:py-24 bg-sky-50">
             <div class="container mx-auto px-4">
                 <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Our Complete Service Menu</h2>
                 <div class="space-y-16">
-                    
-                    <div id="Therapeutic-Massage"class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+
+                    <!-- Service Item 1: Foot Reflexology Massage -->
+                    <div id="Foot-Reflexology-Massage" class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
                         <div class="md:w-1/2 mb-6 md:mb-0 md:mr-8">
-                            <img src="images/theraimage.jpg" alt="Therapeutic Massage" class="h-full h-64 object-cover rounded-lg shadow-md">
+                            <img src="images/foot-reflexology.jpg" alt="Foot Reflexology Massage" class="w-full h-64 object-cover rounded-lg shadow-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-left">
-                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Placeholder Service</h3>
+                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Foot Reflexology Massage</h3>
                             <p class="text-gray-700 mb-6 leading-relaxed">
-                                Price per Hour
+                                A therapeutic foot massage focusing on reflex points to promote overall body wellness and relaxation.
                             </p>
-                            <span class="text-blue-600 text-2xl font-bold">
-                                <p>
-                                    60 minutes       &emsp;&emsp;&emsp;&emsp;       90$ <br>
-                                    90 minutes       &emsp;&emsp;&emsp;&emsp;       135$<br>
-                                    Service 2        &emsp;&emsp;&emsp;&emsp;       100$<br>
-                                    Service 3        &emsp;&emsp;&emsp;&emsp;       50$
-                                </p> 
+                            <span class="text-sky-600 text-2xl font-bold">60 Mins: $69</span>
+                        </div>
+                    </div>
+
+                    <!-- Service Item 2: Single Massage (Body/Feet) -->
+                    <div id="Single-Massage" class="flex flex-col md:flex-row-reverse items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+                        <div class="md:w-1/2 mb-6 md:mb-0 md:ml-8">
+                            <img src="images/single-massage.jpg" alt="Single Massage" class="w-full h-64 object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="md:w-1/2 text-center md:text-right">
+                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Single Massage (Body/Feet)</h3>
+                            <p class="text-gray-700 mb-6 leading-relaxed">
+                                Personalized massage sessions for either full body or targeted foot relief, tailored to your preference.
+                            </p>
+                            <span class="text-sky-600 text-2xl font-bold">
+                                30 Mins: $50 <br>
+                                60 Mins: $75 <br>
+                                75 Mins: $90 <br>
+                                90 Mins: $110
                             </span>
-                            
-                        </div>
-                    </div>
-<!--                     
-                    <div class="flex flex-col md:flex-row-reverse items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
-                        <div class="md:w-1/2 mb-6 md:mb-0 md:ml-8">
-                            <img src="images/facial.png" alt="Rejuvenating Facials" class="h-full h-64 object-cover rounded-lg shadow-md">
-                        </div>
-                        <div class="md:w-1/2 text-center md:text-right">
-                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Rejuvenating Facials</h3>
-                            <p class="text-gray-700 mb-6 leading-relaxed">
-                                Restore your skin's natural glow with our range of custom facials, designed to cleanse, hydrate, and nourish all skin types. Experience a personalized treatment for a radiant complexion.
-                            </p>
-                            <span class="text-blue-600 text-2xl font-bold">Starting from $95</span>
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+                    <!-- Service Item 3: Full Body Massage (with Hot Stone) -->
+                    <div id="Full-Body-Massage-Hot-Stone" class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
                         <div class="md:w-1/2 mb-6 md:mb-0 md:mr-8">
-                            <img src="images/bodywrap.jpg" alt="Luxurious Body Wraps" class="h-full h-64 object-cover rounded-lg shadow-md">
+                            <img src="images/hot-stone-massage.jpg" alt="Full Body Massage with Hot Stone" class="w-full h-64 object-cover rounded-lg shadow-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-left">
-                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Luxurious Body Wraps</h3>
+                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Full Body Massage (with Hot Stone)</h3>
                             <p class="text-gray-700 mb-6 leading-relaxed">
-                                Indulge in our detoxifying and hydrating body wraps, leaving your skin silky smooth and your body refreshed. A perfect treatment for skin nourishment and relaxation.
+                                Experience deep relaxation with our full body massage, enhanced with warm hot stones and aromatic essential oils.
                             </p>
-                            <span class="text-blue-600 text-2xl font-bold">Starting from $120</span>
+                            <span class="text-sky-600 text-2xl font-bold">60 Mins: $199</span>
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row-reverse items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+                    <!-- Service Item 4: Four-Hand Massage -->
+                    <div id="Four-Hand-Massage" class="flex flex-col md:flex-row-reverse items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
                         <div class="md:w-1/2 mb-6 md:mb-0 md:ml-8">
-                            <img src="images/coupleretreat.jpg" alt="Couple's Retreat" class="h-full h-64 object-cover rounded-lg shadow-md">
+                            <img src="images/four-hand-massage.jpg" alt="Four-Hand Massage" class="w-full h-64 object-cover rounded-lg shadow-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-right">
-                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Couple's Retreat</h3>
+                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Four-Hand Massage</h3>
                             <p class="text-gray-700 mb-6 leading-relaxed">
-                                Share a moment of pure bliss with a loved one in our serene couple's room, featuring tandem massages and private sauna access for an unforgettable shared experience.
+                                Indulge in the ultimate relaxation with two therapists working in synchronized harmony for a deeply therapeutic experience.
                             </p>
-                            <span class="text-blue-600 text-2xl font-bold">Starting from $220</span>
+                            <span class="text-sky-600 text-2xl font-bold">60 Mins: $150</span>
                         </div>
                     </div>
 
-                    <div class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+                    <!-- Service Item 5: Pregnant Massage -->
+                    <div id="Pregnant-Massage" class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
                         <div class="md:w-1/2 mb-6 md:mb-0 md:mr-8">
-                            <img src="images/manicure.jpg" alt="Manicure & Pedicure" class="h-full h-64 object-cover rounded-lg shadow-md">
+                            <img src="images/pregnant-massage.jpg" alt="Pregnant Massage" class="w-full h-64 object-cover rounded-lg shadow-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-left">
-                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Manicure & Pedicure</h3>
+                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Pregnant Massage</h3>
                             <p class="text-gray-700 mb-6 leading-relaxed">
-                                Pamper your hands and feet with our luxurious manicures and pedicures, leaving them soft, smooth, and perfectly polished.
+                                Gentle and soothing massage designed to provide comfort and relief for expectant mothers.
                             </p>
-                            <span class="text-blue-600 text-2xl font-bold">Starting from $45</span>
+                            <span class="text-sky-600 text-2xl font-bold">60 Mins: $85</span>
                         </div>
-                    </div> -->
+                    </div>
 
-                    <!-- <div class="flex flex-col md:flex-row-reverse items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+                    <!-- Service Item 6: Couple Massage -->
+                    <div id="Couple-Massage" class="flex flex-col md:flex-row-reverse items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
                         <div class="md:w-1/2 mb-6 md:mb-0 md:ml-8">
-                            <img src="images/sauna-steam.jpg" alt="Sauna & Steam" class="h-full h-64 object-cover rounded-lg shadow-md">
+                            <img src="images/couple-massage.jpg" alt="Couple Massage" class="w-full h-64 object-cover rounded-lg shadow-md">
                         </div>
                         <div class="md:w-1/2 text-center md:text-right">
-                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Sauna & Steam Sessions</h3>
+                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Couple Massage</h3>
                             <p class="text-gray-700 mb-6 leading-relaxed">
-                                Detoxify and relax in our state-of-the-art sauna and steam rooms, promoting circulation and stress relief.
+                                Share a moment of pure bliss with a loved one in our serene couple's room, featuring tandem massages.
                             </p>
-                            <span class="text-blue-600 text-2xl font-bold">Starting from $30</span>
+                            <span class="text-sky-600 text-2xl font-bold">60 Mins: $159</span>
                         </div>
-                    </div> -->
+                    </div>
+
+                    <!-- Service Item 7: Scalp & Head Massage -->
+                    <div id="Scalp-Head-Massage" class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+                        <div class="md:w-1/2 mb-6 md:mb-0 md:mr-8">
+                            <img src="images/scalp-head-massage.jpg" alt="Scalp & Head Massage" class="w-full h-64 object-cover rounded-lg shadow-md">
+                        </div>
+                        <div class="md:w-1/2 text-center md:text-left">
+                            <h3 class="text-3xl font-semibold text-blue-700 mb-4">Scalp & Head Massage</h3>
+                            <p class="text-gray-700 mb-6 leading-relaxed">
+                                Invigorating massage focusing on the scalp and head to relieve tension and promote relaxation.
+                            </p>
+                            <span class="text-sky-600 text-2xl font-bold">
+                                45 Mins: $60 <br>
+                                60 Mins (Short Hair): $75 <br>
+                                60 Mins (Long Hair): $85
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Enhancements Section -->
+                    <div id="Enhancements" class="bg-white rounded-xl shadow-lg p-6 md:p-8 transform hover:scale-[1.01] transition duration-300 ease-in-out">
+                        <h3 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Enhancements</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                            <div class="p-4 bg-sky-50 rounded-lg">
+                                <p class="text-xl font-medium text-gray-700 mb-2">Upper Back Hot Stone</p>
+                                <span class="text-sky-600 text-2xl font-bold">$15</span>
+                            </div>
+                            <div class="p-4 bg-sky-50 rounded-lg">
+                                <p class="text-xl font-medium text-gray-700 mb-2">Sugar Foot Scrub</p>
+                                <span class="text-sky-600 text-2xl font-bold">$15</span>
+                            </div>
+                            <div class="p-4 bg-sky-50 rounded-lg">
+                                <p class="text-xl font-medium text-gray-700 mb-2">Deep Muscle</p>
+                                <span class="text-sky-600 text-2xl font-bold">$15</span>
+                            </div>
+                            <div class="p-4 bg-sky-50 rounded-lg">
+                                <p class="text-xl font-medium text-gray-700 mb-2">Aroma Therapy</p>
+                                <span class="text-sky-600 text-2xl font-bold">$15</span>
+                            </div>
+                            <div class="p-4 bg-sky-50 rounded-lg">
+                                <p class="text-xl font-medium text-gray-700 mb-2">Upper Back Scrub</p>
+                                <span class="text-sky-600 text-2xl font-bold">$15</span>
+                            </div>
+                            <div class="p-4 bg-sky-50 rounded-lg">
+                                <p class="text-xl font-medium text-gray-700 mb-2">Medical Balm</p>
+                                <span class="text-sky-600 text-2xl font-bold">$15</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-
     </main>
 
-    <footer class="text-white py-12" style="background-color: #f8fcf4; font-family: 'Times New Roman', sans-serif;">
+    <footer class="text-white py-12" style="background-color: #9fc1edff; font-family: 'Times New Roman', sans-serif;">
         <div class="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
             <div class="mb-6 md:mb-0">
                 <h3 class="text-2xl font-bold mb-2 text-blue-800">Sky Foot Spa</h3>
-                <p class="text-blue-800">Rejuvenate Your Senses</p>
+                <p class="text-blue-800 italic">Balance begins at your feet</p>
             </div>
             <div class="mb-6 md:mb-0">
                 <h4 class="text-xl font-semibold mb-3 text-blue-800">Quick Links</h4>
@@ -155,8 +226,8 @@
                 <h4 class="text-xl font-semibold mb-3 text-blue-800">Contact Info</h4>
                 <p class="text-blue-800 mb-2">19855 Century Boulevard</p>
                 <p class="text-blue-800 mb-2">Germantown, MD 20974</p>
-                <p class="text-blue-800 mb-2">Phone: (240) 883-8837</p>
-                <p class="text-blue-800">Email: theskyfootspa@gmail.com</p>
+                <p class="text-blue-800 mb-2"><a href="tel:+12408838837">(240) 883-8837</a></p>
+                <p class="text-blue-800"><a href="mailto:theskyfootspa@gmail.com">theskyfootspa@gmail.com</a></p>
             </div>
 
         </div>

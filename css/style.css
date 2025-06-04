@@ -1,7 +1,12 @@
-/* Custom styles for the Inter font and general body styling */
+/* Global Font Styling */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Times New Roman', serif; /* Changed to Times New Roman as requested */
     scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    /* NEW: Blue sky cloud background */
+    background-image: url('https://images.unsplash.com/photo-1518092658866-b30f8b1c1d0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Subtle blue sky with clouds */
+    background-size: cover; /* Cover the entire background */
+    background-attachment: fixed; /* Keep background fixed when scrolling */
+    background-position: center; /* Center the background image */
 }
 
 /* Custom class for active navigation link */
@@ -20,8 +25,7 @@ body {
     display: flex;
 }
 
-/* NEW: Styles for the animated cloud */
+/* Styles for the animated cloud (if enabled in script.js) */
 #animated-cloud {
-    /* Base styles - opacity set to 0 in HTML for initial hidden state */
     transition: opacity 3s ease-in-out, transform 10s linear; /* Adjust timing as desired */
 }
